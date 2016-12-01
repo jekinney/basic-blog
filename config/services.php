@@ -35,4 +35,22 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'facebook' => [
+        'client_id' => env('FACEBOOK_ID'),
+        'client_secret' => env('FACEBOOK_CLIENT'),
+        'redirect' => env('FACEBOOK_REDIRECT', 'http://blog.dev/socail/facebook/callback'),
+    ],
+
+    'github' => [
+        'client_id' => env('GITHUB_ID'),
+        'client_secret' => env('GITHUB_CLIENT'),
+        'redirect' => env('GITHUB_REDIRECT', 'http://blog.dev/socail/github/callback'),
+    ],
+
+    'google' => [
+        'client_id' => env('GOOGLE_ID'),
+        'client_secret' => env('GOOGLE_CLIENT'),
+        'redirect' => env('GOOGLE_REDIRECT', 'http://blog.dev/socail/google/callback'),
+    ],
+
 ];

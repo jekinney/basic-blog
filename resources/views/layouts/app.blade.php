@@ -60,6 +60,7 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                    <li><a href="{{ route('profile.edit', $user) }}">Profile/Settings</a></li>
                                     @if($is_author)
                                         <li><a href="{{ route('article.create') }}">New Article</a></li>
                                     @endif
